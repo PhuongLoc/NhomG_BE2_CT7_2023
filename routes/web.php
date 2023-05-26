@@ -17,9 +17,8 @@ use App\Http\Controllers\Admin\SliderController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('login', [LoginController::class, 'index'])->name('login');
-Route::post('admin/users/login/store', [LoginController::class, 'store']);5
+Route::post('admin/users/login/store', [LoginController::class, 'store']);
 
 Route::middleware(['auth'])->group(function () {
 
